@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</Form></title>
+</head>
+<body>
+    <form method="POST">{% csrf_token %}
+        <label for="s1">Name1</label>
+        <label for="s2">Name2</label>
+        <br><input name="s1" id="s1" type="number" placeholder="Enter number" required>
+        <br><input name="s2" id="s1" type="number" placeholder="Enter number" required>
+        <br><button>Submit</button>
+    </form>
+    <h3>The big num is:{{ res }}</h3>
+</body>
+</html>

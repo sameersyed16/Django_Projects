@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</Form></title>
+</head>
+<body>
+    <form method="POST">{% csrf_token %}
+        <label for="s1">Number</label>
+        <br><input name="s1" id="s1" type="number" placeholder="Enter number" required>
+        <br><button>Submit</button>
+    </form>
+    <h3>is it prime</h3>
+    {% if res %}
+        it is amstrong
+    {% else %}
+        it is not amstrong
+    {% endif %}
+</body>
+</html>
