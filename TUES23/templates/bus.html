@@ -1,0 +1,14 @@
+<table border="1">
+    <thead>
+        <th>Bus No</th>
+        <th>route</th>
+    </thead>
+<tbody>
+    {% for bus in bus %}
+    <tr>
+        <td>{{ bus.no }}</td>
+        <td>{{ bus.route }}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>

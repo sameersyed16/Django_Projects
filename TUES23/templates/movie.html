@@ -1,0 +1,20 @@
+<table border="200">
+    <thead>
+            <th>Movie</th>
+            <th>Director</th>
+            <th>Year</th>
+            <th>Genre</th>
+            <th>IMDb</th>
+    </thead>
+<tbody>
+    {% for i in movie %}
+    <tr>
+        <td>{{ i.name }}</td>
+        <td>{{ i.director }}</td>
+        <td>{{ i.year }}</td>
+        <td>{{ i.genre }}</td>
+        <td>{{ i.IMDb }}</td>
+    </tr>
+    {% endfor %}
+</tbody>
+</table>
