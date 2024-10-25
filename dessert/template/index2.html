@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page</Form></title>
+</head>
+<body>
+    <form method="POST">{% csrf_token %}
+        <label for="brand_new">Name</label>
+        <br><input name="Brand_new" id="Brand_new" type="text" placeholder="Enter Brand" required>
+        <label for="sno">Number</label>
+        <br><input name="sno" id="sno" type="Number" placeholder="Enter Number" required>
+        <br><button>Submit</button>
+    </form>
+    <h3>Enter Number and Name</h3>
+</body>
+</html>
