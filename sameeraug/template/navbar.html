@@ -1,0 +1,10 @@
+{% if request.user.is_authenticated %}
+<a href="{% url 'homepage' %}" class="btn btn-primary">logout</a>
+{% else %}
+<a href="{% url 'loginpage' %}" class="btn btn-primary">login</a>
+<a href="{% url 'registerpage' %}" class="btn btn-primary">register</a>
+{% endif %}
+<a href="{% url 'homepage' %}" class="btn btn-primary">home</a>
+<a href="{% url 'createpage' %}" class="btn btn-primary">create</a>
+<a href="{% url 'displaypage' %}" class="btn btn-primary">display</a>
+<a href="{% url 'profilepage' %}" class="btn btn-primary">profile</a>
